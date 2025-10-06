@@ -12,6 +12,7 @@
 #include "cc3xx_test_chacha.h"
 #include "cc3xx_test_pka.h"
 #include "cc3xx_test_ecc.h"
+#include "cc3xx_test_ecc_edwards.h"
 #include "cc3xx_test_ecdsa.h"
 #include "cc3xx_test_dpa.h"
 #include "cc3xx_test_rng.h"
