@@ -123,6 +123,10 @@ cc3xx_err_t cc3xx_lowlevel_ec_edwards_mult_and_add_four_bit_window(cc3xx_ec_curv
                                                      uint32_t *scalar_a,
                                                      uint32_t *scalar_b,
                                                      cc3xx_ec_point_affine *res);
+
+void calculate_table(cc3xx_ec_curve_t *curve, cc3xx_ec_point_extended *p, cc3xx_ec_point_extended_data *table);
+void allocate_addition_registers(void);
+void free_addition_registers(void);
 #ifdef __cplusplus
 }
 #endif
