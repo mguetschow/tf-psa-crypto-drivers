@@ -362,7 +362,7 @@ int cc3xx_test_ecc_edw_decompress_point(cc3xx_ec_edw_point_decompress_test_data_
     NRF_CRYPTOCELL->ENABLE = 1;
     cc3xx_lowlevel_init();
     cc3xx_ec_curve_t curve = {};
-    cc3xx_lowlevel_ec_init(CC3XX_EC_CURVE_ED25519, &curve);
+    cc3xx_lowlevel_ec_init(CC3XX_EC_CURVE_ED25519, &curve); // todo: this should test for return value!
 
     //TODO: Could be moved inside function and only uint32_t values could be returned
     //allocate registers for decompressed point

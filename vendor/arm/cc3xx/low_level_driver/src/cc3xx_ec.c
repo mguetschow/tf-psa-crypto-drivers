@@ -253,6 +253,8 @@ static bool validate_curve(const cc3xx_ec_curve_t *curve)
     const cc3xx_ec_curve_data_t *curve_data = curve_data_map[curve->id];
     bool result = true;
 
+    // todo: should be adapted to edwards, as well
+
     result &= validate_reg_is_equal_to_buf(curve->param_a,
                                            curve_data->field_param_a,
                                            curve->modulus_size);

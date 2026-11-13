@@ -17,7 +17,6 @@
 #include "cc3xx_pka.h"
 #include "cc3xx_ec.h"
 
-#include "fatal_error.h"
 #include <string.h>
 cc3xx_ec_point_extended_data edwards_extended_neutral_element_data =
     {.x = {0x0},

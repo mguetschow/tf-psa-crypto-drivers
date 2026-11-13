@@ -531,7 +531,7 @@ const cc3xx_ec_curve_data_t curve_448 = {
 
     See https://datatracker.ietf.org/doc/html/rfc7748#section-4.1
     for curve parameters.*/
-cc3xx_ec_curve_data_t ed25519 = {
+const cc3xx_ec_curve_data_t ed25519 = {
 
     .type = CC3XX_EC_CURVE_TYPE_TWISTED_EDWARDS,
     .register_size = 32,
